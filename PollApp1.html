@@ -12,45 +12,67 @@
 <body>
     <div class="mainDiv">
         <div class="innerDiv">
-            <div id="ques1">
+            
+            <div class="ques">
+                <h2 class="question">Q1: What is the full form of JS?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" id="a" class="answer" onclick="getCheckedId('a')"/>
+                        <label for="ans1" id="option1">JohnSmith</label>
+                    </li>
+                    <li>
+                        <input type="radio"  id="b" class="answer" onclick="getCheckedId('b')"/>
+                        <label for="ans2" id="option2">JavaSource</label>
+                    </li>
+                    <li>
+                        <input type="radio"  id="c" class="answer correct" onclick="getCheckedId('c')"/>
+                        <label for="ans3" id="option3">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer"  onclick="getCheckedId('d')"/>
+                        <label for="ans4" id="option4">JavaScan</label>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div id="ques1" >
             <h2 class="question">Q1: What is the full form of JS?</h2>
             <ul>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)" name="answer" id="ans1" class="answer" value="JohnSmith"/>
+                    <input type="radio" onclick="getAns(this.id)"  id="a" class="answer" value="JohnSmith"/>
                     <label for="ans1" id="option1">JohnSmith</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans2" class="answer" value="JavaSource"/>
+                    <input type="radio" onclick="getAns(this.id)"   id="b" class="answer" value="JavaSource"/>
                     <label for="ans2" id="option2">JavaSource</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans3" class="answer correct" value="JavaScript"/>
+                    <input type="radio" onclick="getAns(this.id)"   id="c" class="answer correct" value="JavaScript"/>
                     <label for="ans3" id="option3">JavaScript</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans4" class="answer" value="JavaScan" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="d" class="answer" value="JavaScan" />
                     <label for="ans4" id="option4">JavaScan</label>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
-        <div id="ques2">
+        <!-- <div id="ques2">
             <h2 class="question">Q2: What is the full form of CSS?</h2>
             <ul>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)" name="answer" id="ans1" class="answer" value="Cast Style Sheet" />
+                    <input type="radio" onclick="getAns(this.id)" name="answer" id="a" class="answer" value="Cast Style Sheet" />
                     <label for="ans1" id="option1">Cast Style Sheet</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)" name="answer" id="ans2" class="answer correct" value="Cascading Style Sheet"  />
+                    <input type="radio" onclick="getAns(this.id)" name="answer" id="b" class="answer correct" value="Cascading Style Sheet"  />
                     <label for="ans2" id="option2" >Cascading Style Sheet</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans3" class="answer" value="Cast Super Style"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="c" class="answer" value="Cast Super Style"/>
                     <label for="ans3" id="option3">Cast Super Style</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)" name="answer" id="ans4" class="answer" value="Castcading Style Source" />
+                    <input type="radio" onclick="getAns(this.id)" name="answer" id="d" class="answer" value="Castcading Style Source" />
                     <label for="ans4" id="option4">Castcading Style Source</label>
                 </li>
             </ul>
@@ -60,41 +82,41 @@
             <h2 class="question">Q3: how to get Id in JS?</h2>
             <ul>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans1" class="answer" value="getElementById()"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="a" class="answer" value="getElementById()"/>
                     <label for="ans1" id="option1">getElementById()</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans2" class="answer" value="querySelector('#...')" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="b" class="answer" value="querySelector('#...')" />
                     <label for="ans2" id="option2">querySelector('#...')</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans3" class="answer" value="getElementsById"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="c" class="answer" value="getElementsById"/>
                     <label for="ans3" id="option3">getElementsById</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans4" class="answer correct" value="Both a & b" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="d" class="answer correct" value="Both a & b" />
                     <label for="ans4" id="option4">Both a & b</label>
                 </li>
             </ul>
         </div>
 
         <div id="ques4">
-            <h2 class="question">Q4: Choose the Right condition?</h2>
+            <h2 class="question" >Q4: Choose the Right condition?</h2>
             <ul>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans1" class="answer correct" value="a >= b" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="a" class="answer correct" value="a >= b" />
                     <label for="ans1" id="option1">a >= b</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans2" class="answer" value="a =< b"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="b" class="answer" value="a =< b"/>
                     <label for="ans2" id="option2">a =< b</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans3" class="answer" value="a => b"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="c" class="answer" value="a => b"/>
                     <label for="ans3" id="option3">a => b</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans4" class="answer" value="!b ==< a"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="d" class="answer" value="!b ==< a"/>
                     <label for="ans4" id="option4">!b ==< a</label>
                 </li>
             </ul>
@@ -104,23 +126,23 @@
             <h2 class="question">Q5: Scope of const is ?</h2>
             <ul>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans1" class="answer" value="local scope" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="a check" class="answer" value="local scope" />
                     <label for="ans1" id="option1">local scope</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans2" class="answer correct" value="block scope"/>
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="b " class="answer correct" value="block scope"/>
                     <label for="ans2" id="option2">block scope</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans3" class="answer" value="global scope" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="c" class="answer" value="global scope" />
                     <label for="ans3" id="option3">global scope</label>
                 </li>
                 <li>
-                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="ans4" class="answer" value="none of these" />
+                    <input type="radio" onclick="getAns(this.id)"  name="answer" id="d" class="answer" value="none of these" />
                     <label for="ans4" id="option4">none of these</label>
                 </li>
             </ul>
-        </div>
+        </div> -->
             <button class="submitBtn" id="submit" onclick="submission()">Submit</button>
             <div class="scoreArea" id="score">
                 <h3>You Scored <span class="Scored">0</span> / <span class="totalScore"></span></h3>

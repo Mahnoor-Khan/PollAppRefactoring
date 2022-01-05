@@ -80,6 +80,7 @@ input{
 .playAgnBtn:hover{
     background: rgb(56, 168, 159);
 }
-#ques2, #ques3, #ques4, #ques5{
+#ques1,#ques2, #ques3, #ques4, #ques5{
+
     display:none;
 } 
