@@ -38,7 +38,7 @@
 // NEW CODE
 
 const QuestionDB = [{
-    ques: "Q1: JavaScript  used for?",
+    ques: "Q1: JavaScript  is ___ language?",
     a: "back end but not front end ",
     b: "Front End",
     c: "front end but not back end",
